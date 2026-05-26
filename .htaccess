@@ -1,0 +1,75 @@
+# ============================================================
+# Arkay Interior & Furniture - Security & Performance Headers
+# For Hostinger (Apache) - Place in public_html root
+# ============================================================
+
+# ---------- Force HTTPS ----------
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ---------- Force www ----------
+RewriteCond %{HTTP_HOST} ^arkayfurniture\.com$ [NC]
+RewriteRule ^(.*)$ https://www.arkayfurniture.com/$1 [L,R=301]
+
+# ---------- Security Headers ----------
+<IfModule mod_headers.c>
+    # Prevent clickjacking - blocks your site from being loaded in iframes
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Prevent MIME type sniffing attacks
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Enable XSS protection in older browsers
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Referrer policy - sends origin only to other sites
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions policy - disable unused browser features
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+
+    # Strict Transport Security - force HTTPS for 1 year
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Content Security Policy - controls what resources can load
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'self'; base-uri 'self'; form-action 'self'"
+
+    # Remove server version info
+    Header unset Server
+    Header unset X-Powered-By
+</IfModule>
+
+# ---------- Disable Directory Browsing ----------
+Options -Indexes
+
+# ---------- Block Access to Hidden Files ----------
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ---------- Block Access to Sensitive Files ----------
+<FilesMatch "\.(git|py|md|log|bak|sql|env|ini|cfg|conf)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ---------- Caching for Performance ----------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# ---------- GZIP Compression ----------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml text/plain
+</IfModule>
+
+# ---------- Custom Error Pages ----------
+ErrorDocument 404 /index.html
