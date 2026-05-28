@@ -666,6 +666,10 @@ a:hover { color: var(--gold-light); }
     linear-gradient(180deg, var(--footer-bg-start), var(--footer-bg-end));
 }
 
+.site-footer .font-heading {
+  color: white !important;
+}
+
 .site-footer::before {
   content: '';
   position: absolute;

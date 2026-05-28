@@ -168,7 +168,7 @@
       entries.forEach((entry) => {
         if (entry.isIntersecting) entry.target.classList.add('is-visible');
       });
-    }, { threshold: 0.18 });
+    }, { threshold: 0.02 });
 
     items.forEach((item) => observer.observe(item));
   }
