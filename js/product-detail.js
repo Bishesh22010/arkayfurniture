@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'cat-temple-area': ['temple area 1.png'],
       'cat-dining': ['dining1.png', 'dining2.png', 'dining3.png'],
       'cat-sofa': ['sofa1.jpg', 'sofa2.jpg', 'sofa3.jpg'],
-      'cat-wardrobe': ['wardrobe1.jpeg', 'wardrobe2.jpeg', 'wardobe3.png']
+      'cat-wardrobe': ['wardrobe1.jpeg', 'wardrobe2.jpeg', 'wardrobe3.png']
     };
 
     if (galleryContainer && product) {

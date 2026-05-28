@@ -48,5 +48,5 @@ const categoriesData = [
   { id: 'cat-temple-area', category: 'Temple Area', title: 'Temple Area', img: 'temple area 1.png', desc: 'Custom carved temple and pooja units.' },
   { id: 'cat-dining', category: 'Dining', title: 'Dining', img: 'dining3.png', desc: 'Dining tables and seating.' },
   { id: 'cat-sofa', category: 'Sofa', title: 'Sofa', img: 'sofa1.jpg', desc: 'Lounge seating and sofa sets.' },
-  { id: 'cat-wardrobe', category: 'Wardrobe', title: 'Wardrobe', img: 'wardobe3.png', desc: 'Sliding and hinged wardrobes.' }
+  { id: 'cat-wardrobe', category: 'Wardrobe', title: 'Wardrobe', img: 'wardrobe3.png', desc: 'Sliding and hinged wardrobes.' }
 ];
