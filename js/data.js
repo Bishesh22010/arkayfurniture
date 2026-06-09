@@ -35,7 +35,41 @@ const productsData = [
   { id: 'modern-dining-set', category: 'Dining', title: 'Modern Dining Set', img: 'dining3.png', desc: 'Modern dining set for contemporary homes.' },
   { id: 'living-room-sofa', category: 'Sofa', title: 'Living Room Sofa', img: 'sofa1.jpg', desc: 'Contemporary sofa piece with premium fabric upholstery.' },
   { id: 'l-shape-sofa', category: 'Sofa', title: 'L-Shape Sofa', img: 'sofa2.jpg', desc: 'Comfortable L-shape sofa for large families.' },
-  { id: 'classic-sofa', category: 'Sofa', title: 'Classic Sofa', img: 'sofa3.jpg', desc: 'Classic sofa set with durable materials.' }
+  { id: 'classic-sofa', category: 'Sofa', title: 'Classic Sofa', img: 'sofa3.jpg', desc: 'Classic sofa set with durable materials.' },
+  { id: 'single-bed-1', category: 'Single Bed', title: 'Single Bed Design 1', img: 'singlebed1.png', desc: 'Comfortable and space-saving single bed.' },
+  { id: 'single-bed-2', category: 'Single Bed', title: 'Single Bed Design 2', img: 'singlebed2.png', desc: 'Modern single bed with storage.' },
+  { id: 'single-bed-3', category: 'Single Bed', title: 'Single Bed Design 3', img: 'singlebed3.png', desc: 'Premium wooden single bed.' },
+  { id: 'dining-4', category: 'Dining', title: 'Dining Design 4', img: 'dining4.png', desc: 'Elegant dining set for your home.' },
+  { id: 'dining-5', category: 'Dining', title: 'Dining Design 5', img: 'dining5.png', desc: 'Elegant dining set for your home.' },
+  { id: 'dining-6', category: 'Dining', title: 'Dining Design 6', img: 'dining6.png', desc: 'Elegant dining set for your home.' },
+  { id: 'dining-7', category: 'Dining', title: 'Dining Design 7', img: 'dining7.png', desc: 'Elegant dining set for your home.' },
+  { id: 'dining-8', category: 'Dining', title: 'Dining Design 8', img: 'dining8.png', desc: 'Elegant dining set for your home.' },
+  { id: 'dining-9', category: 'Dining', title: 'Dining Design 9', img: 'dining9.png', desc: 'Elegant dining set for your home.' },
+  { id: 'dining-10', category: 'Dining', title: 'Dining Design 10', img: 'dining10.png', desc: 'Elegant dining set for your home.' },
+  { id: 'wardrobe-4', category: 'Wardrobe', title: 'Wardrobe Design 4', img: 'wardrobe4.png', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-5', category: 'Wardrobe', title: 'Wardrobe Design 5', img: 'wardrobe5.png', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-6', category: 'Wardrobe', title: 'Wardrobe Design 6', img: 'wardrobe6.png', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-7', category: 'Wardrobe', title: 'Wardrobe Design 7', img: 'wardrobe7.png', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-8', category: 'Wardrobe', title: 'Wardrobe Design 8', img: 'wardrobe8.png', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'bedroom-7', category: 'Bedroom', title: 'Bedroom Design 7', img: 'bed room 7.jpeg', desc: 'Elegant and comfortable bedroom furniture.' },
+  { id: 'living-coffee-table-1', category: 'Living Room', title: 'Living Room Coffee Table 1', img: 'living_coffe_table1.jpeg', desc: 'Stylish coffee table for the living room.' },
+  { id: 'living-coffee-table-2', category: 'Living Room', title: 'Living Room Coffee Table 2', img: 'living_coffe_table2.jpeg', desc: 'Stylish coffee table for the living room.' },
+  { id: 'living-coffee-table-3', category: 'Living Room', title: 'Living Room Coffee Table 3', img: 'living_coffe_table3.jpeg', desc: 'Stylish coffee table for the living room.' },
+  { id: 'living-coffee-table-4', category: 'Living Room', title: 'Living Room Coffee Table 4', img: 'living_coffe_table4.jpeg', desc: 'Stylish coffee table for the living room.' },
+  { id: 'wardrobe-9', category: 'Wardrobe', title: 'Wardrobe Design 9', img: 'wardrobe9.jpeg', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-10', category: 'Wardrobe', title: 'Wardrobe Design 10', img: 'wardrobe10.jpeg', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-11', category: 'Wardrobe', title: 'Wardrobe Design 11', img: 'wardrobe11.jpeg', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-12', category: 'Wardrobe', title: 'Wardrobe Design 12', img: 'wardrobe12.jpeg', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-13', category: 'Wardrobe', title: 'Wardrobe Design 13', img: 'wardrobe13.jpeg', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-14', category: 'Wardrobe', title: 'Wardrobe Design 14', img: 'wardrobe14.jpeg', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'wardrobe-15', category: 'Wardrobe', title: 'Wardrobe Design 15', img: 'wardrobe15.jpeg', desc: 'Elegant and spacious wardrobe.' },
+  { id: 'tv-unit-1', category: 'TV Unit', title: 'TV Unit Design 1', img: 'tv_unit1.jpeg', desc: 'Modern and stylish TV unit.' },
+  { id: 'tv-unit-2', category: 'TV Unit', title: 'TV Unit Design 2', img: 'tv_unit2.jpeg', desc: 'Modern and stylish TV unit.' },
+  { id: 'tv-unit-3', category: 'TV Unit', title: 'TV Unit Design 3', img: 'tv_unit3.jpeg', desc: 'Modern and stylish TV unit.' },
+  { id: 'tv-unit-4', category: 'TV Unit', title: 'TV Unit Design 4', img: 'tv_unit4.jpeg', desc: 'Modern and stylish TV unit.' },
+  { id: 'tv-unit-5', category: 'TV Unit', title: 'TV Unit Design 5', img: 'tv_unit5.jpeg', desc: 'Modern and stylish TV unit.' },
+  { id: 'tv-unit-6', category: 'TV Unit', title: 'TV Unit Design 6', img: 'tv_unit6.jpeg', desc: 'Modern and stylish TV unit.' }
+
 ];
 
 const categoriesData = [
@@ -48,5 +82,7 @@ const categoriesData = [
   { id: 'cat-temple-area', category: 'Temple Area', title: 'Temple Area', img: 'temple area 1.png', desc: 'Custom carved temple and pooja units.' },
   { id: 'cat-dining', category: 'Dining', title: 'Dining', img: 'dining3.png', desc: 'Dining tables and seating.' },
   { id: 'cat-sofa', category: 'Sofa', title: 'Sofa', img: 'sofa1.jpg', desc: 'Lounge seating and sofa sets.' },
-  { id: 'cat-wardrobe', category: 'Wardrobe', title: 'Wardrobe', img: 'wardrobe3.png', desc: 'Sliding and hinged wardrobes.' }
+  { id: 'cat-wardrobe', category: 'Wardrobe', title: 'Wardrobe', img: 'wardrobe3.png', desc: 'Sliding and hinged wardrobes.' },
+  { id: 'cat-single-bed', category: 'Single Bed', title: 'Single Bed', img: 'singlebed1.png', desc: 'Comfortable and space-saving single beds.' },
+  { id: 'cat-tv-unit', category: 'TV Unit', title: 'TV Unit', img: 'tv_unit1.jpeg', desc: 'Modern and stylish TV units for your living room.' }
 ];

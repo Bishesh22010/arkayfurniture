@@ -60,16 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Populate Gallery
     const galleryContainer = document.getElementById('pd-gallery-container');
     const galleryMap = {
-      'cat-living-room': ['living room 1.png', 'living room 2.png', 'living room 3.png', 'living room 4.png', 'living room 5.png', 'living room 6.png', 'living room 7.png', 'living room 8.png'],
+      'cat-living-room': ['living room 1.png', 'living room 2.png', 'living room 3.png', 'living room 4.png', 'living room 5.png', 'living room 6.png', 'living room 7.png', 'living room 8.png', 'living_coffe_table1.jpeg', 'living_coffe_table2.jpeg', 'living_coffe_table3.jpeg', 'living_coffe_table4.jpeg'],
       'cat-bedroom': ['bed room 1.png', 'bed room 2.png', 'bed room 3.png', 'bed room 4.png', 'bed room 5.png', 'bed room 6.png', 'kids bedroom1.png', 'kids bedroom2.png', 'kids bedroom3.png', 'kids bedroom4.png'],
       'cat-kids-bedroom': ['kids bedroom1.png', 'kids bedroom2.png', 'kids bedroom3.png', 'kids bedroom4.png'],
       'cat-modular-kitchen': ['modular kitchen 1.png', 'modular kitchen 2.png', 'modular kitchen 3.png'],
       'cat-bathroom': ['bathroom1.png', 'bathroom2.png', 'bathroom3.png'],
       'cat-washing-area': ['washing area 1.png', 'washing area 2.png', 'washing area 3.png'],
       'cat-temple-area': ['temple area 1.png'],
-      'cat-dining': ['dining1.png', 'dining2.png', 'dining3.png'],
+      'cat-dining': ['dining1.png', 'dining2.png', 'dining3.png', 'dining4.png', 'dining5.png', 'dining6.png', 'dining7.png', 'dining8.png', 'dining9.png', 'dining10.png'],
       'cat-sofa': ['sofa1.jpg', 'sofa2.jpg', 'sofa3.jpg'],
-      'cat-wardrobe': ['wardrobe1.jpeg', 'wardrobe2.jpeg', 'wardrobe3.png']
+      'cat-single-bed': ['singlebed1.png', 'singlebed2.png', 'singlebed3.png'],
+      'cat-tv-unit': ['tv_unit1.jpeg', 'tv_unit2.jpeg', 'tv_unit3.jpeg', 'tv_unit4.jpeg', 'tv_unit5.jpeg', 'tv_unit6.jpeg'],
+      'cat-wardrobe': ['wardrobe1.jpeg', 'wardrobe2.jpeg', 'wardrobe3.png', 'wardrobe4.png', 'wardrobe5.png', 'wardrobe6.png', 'wardrobe7.png', 'wardrobe8.png', 'wardrobe9.jpeg', 'wardrobe10.jpeg', 'wardrobe11.jpeg', 'wardrobe12.jpeg', 'wardrobe13.jpeg', 'wardrobe14.jpeg', 'wardrobe15.jpeg']
     };
 
     if (galleryContainer && product) {
