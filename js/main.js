@@ -316,43 +316,43 @@
     return /^[0-9+\-()\s]{7,}$/.test(value);
   }
 
-  function initForms() {
-    $$('form[data-validate-form]').forEach((form) => {
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
+  // function initForms() {
+  //   $$('form[data-validate-form]').forEach((form) => {
+  //     form.addEventListener('submit', (event) => {
+  //       event.preventDefault();
 
-        const data = new FormData(form);
-        const values = Object.fromEntries(data.entries());
-        const submitButton = form.querySelector('button[type="submit"]');
+  //       const data = new FormData(form);
+  //       const values = Object.fromEntries(data.entries());
+  //       const submitButton = form.querySelector('button[type="submit"]');
 
-        if (values.email !== undefined && String(values.email).trim() && !isValidEmail(String(values.email).trim())) {
-          setFormStatus(form, 'Please enter a valid email address.', false);
-          return;
-        }
+  //       if (values.email !== undefined && String(values.email).trim() && !isValidEmail(String(values.email).trim())) {
+  //         setFormStatus(form, 'Please enter a valid email address.', false);
+  //         return;
+  //       }
 
-        if (values.phone !== undefined && String(values.phone).trim() && !isValidPhone(String(values.phone).trim())) {
-          setFormStatus(form, 'Please enter a valid phone number.', false);
-          return;
-        }
+  //       if (values.phone !== undefined && String(values.phone).trim() && !isValidPhone(String(values.phone).trim())) {
+  //         setFormStatus(form, 'Please enter a valid phone number.', false);
+  //         return;
+  //       }
 
-        if (submitButton) {
-          submitButton.disabled = true;
-          submitButton.dataset.originalText = submitButton.textContent || 'Submit';
-          submitButton.textContent = 'Sending...';
-        }
+  //       if (submitButton) {
+  //         submitButton.disabled = true;
+  //         submitButton.dataset.originalText = submitButton.textContent || 'Submit';
+  //         submitButton.textContent = 'Sending...';
+  //       }
 
-        window.setTimeout(() => {
-          setFormStatus(form, 'Thanks. We will contact you shortly.', true);
-          form.reset();
+  //       window.setTimeout(() => {
+  //         setFormStatus(form, 'Thanks. We will contact you shortly.', true);
+  //         form.reset();
 
-          if (submitButton) {
-            submitButton.disabled = false;
-            submitButton.textContent = submitButton.dataset.originalText || 'Submit';
-          }
-        }, 700);
-      });
-    });
-  }
+  //         if (submitButton) {
+  //           submitButton.disabled = false;
+  //           submitButton.textContent = submitButton.dataset.originalText || 'Submit';
+  //         }
+  //       }, 700);
+  //     });
+  //   });
+  // }
 
   function initLazyImages() {
     $$('img[data-src]').forEach((img) => {
